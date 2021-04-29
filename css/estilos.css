@@ -5,7 +5,7 @@
 body{
 	background: #f3f3f3;
 	color: #000;
-	font-family: sans-serif;
+	font-family: 'Aldrich',sans-serif;
 }
 .contenedor{
 	width: 90%;
@@ -14,14 +14,17 @@ body{
 
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns:  repeat(3, 1fr);
-	grid-template-rows:  repeat(5, auto);
+	grid-template-columns:  repeat(1, 1fr);
+	grid-template-rows:  repeat(8, auto);
 
-	grid-template-areas: "header header header"
-					      "nav nav nav"
-					      "contenido contenido  sidebar"
-					      "noticia1 noticia2 sidebar"
-					      "footer footer footer";
+	grid-template-areas: "header"
+					      "nav"
+					      "contenido"
+					      "plantas"
+					      "animales"
+					      "servicios"
+					      "patrocinadores"
+					      "footer";
 }
 .contenedor > section, 
 .contenedor .cabecera,
@@ -29,19 +32,20 @@ body{
 .contenedor .contenido, 
 .contenedor .sidebar,  
 .contenedor .footer{
-	background: #fff;
+	/*background: #fff;*/
+	background: #184E77;
 	padding: 20px;
 	border-radius: 4px;
 }
 
 .contenedor .cabecera {
-	background: #12203E;
+	background: #184E77;
 	color: #fff;
 	grid-area: header;
 }
 .contenedor .menuPrincipal {
-	background: #12203E;
-	color: #fff;
+	background: #D9ED92;
+	color: #184E77;
 	grid-area: nav;
 }
 
@@ -51,20 +55,28 @@ body{
 	color: #fff;
 }
 
-.contenedor .sidebar{
-	grid-column: 3 /  4;
-	background: #333;
-	grid-area: sidebar;
+/*.contenedor .sidebar{*/
+/*	grid-column: 3 /  4;*/
+/*	background: #333;*/
+/*	grid-area: sidebar;*/
+/*	display: flex;*/
+/*	align-items: center;*/
+/*	justify-content: center;*/
+/*	color: #fff;*/
+/*}*/
+
+.contenedor .plantas,
+.contenedor .animales,
+.contenedor .servicios{
+	background: #184E77;
+	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
 }
-
-.contenedor .noticia1, 
-.contenedor .noticia2{
-	background: #55a8fd;
-	color: #fff;
+.contenedor .patrocinadores{
+	background: #D9ED92;
+	color: #184E77;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -78,7 +90,7 @@ body{
 }
 
 .contenedor .footer{
-	background: #12203E;
+	background: #184E77;
 	color: #fff;
 	grid-area: footer;
 }
