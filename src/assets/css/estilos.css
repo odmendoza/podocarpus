@@ -9,12 +9,20 @@ div{
 }
 .container{
     margin: 50px 150px 50px 150px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
     padding: 0px;
     background-color: transparent;
-    
-    
+
+    display: grid;
+    grid-gap: 20px;
+    /*grid-template-columns: 33% 33% 33%;*/
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows:  repeat(4, auto);
+
+    grid-template-areas: "carrusel carrusel carrusel"
+					      "article article article"
+					      "article article article"
+					      "footer footer footer"
+
 }
 .container div{
     margin: 0px 20px 28px 20px;
@@ -47,7 +55,12 @@ div .description{
 }
 .footer{
     padding: 2rem;
-    text-align: center;
-    background-color:#707070;
+    text-align: left;
+    background-color:#184E77;
+    color: white;
     margin-bottom: 0px;
+}
+img{
+    width: 20px;
+    height: 20px;
 }

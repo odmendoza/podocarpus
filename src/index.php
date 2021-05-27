@@ -1,67 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Maquetación Parque Podocarpus</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="carrusel">
-        LOREM LIMPSUM
-    </div>
+<?php
+include("config/config.php");
+include("shared/header.php");
+?>
+    <header class="carrusel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/mountains.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/mountains-2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/mountains-3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
     <div class="container">
-        <div>
-            <div class="imagen">IMAGE</div>
-            <h3 class="title">Lorem Limpsum</h3>
-            <h4 class="description">Lorem Limpsum</h4>
-        </div>
-        <div>
-            <div class="imagen">IMAGE</div>
-            <h3 class="title">Lorem Limpsum</h3>
-            <h4 class="description">Lorem Limpsum</h4>
-        </div>
-        <div>
-            <div class="imagen">IMAGE</div>
-            <h3 class="title">Lorem Limpsum</h3>
-            <h4 class="description">Lorem Limpsum</h4>
-        </div>
-        <div>
-            <div class="imagen">IMAGE</div>
-            <h3 class="title">Lorem Limpsum</h3>
-            <h4 class="description">Lorem Limpsum</h4>
-        </div>
-        <div>
-            <div class="imagen">IMAGE</div>
-            <h3 class="title">Lorem Limpsum</h3>
-            <h4 class="description">Lorem Limpsum</h4>
-        </div>
-        <div>
-            <div class="imagen">IMAGE</div>
-            <h3 class="title">Lorem Limpsum</h3>
-            <h4 class="description">Lorem Limpsum</h4>
-        </div>
-        <div>
-            <div class="imagen">IMAGE</div>
-            <h3 class="title">Lorem Limpsum</h3>
-            <h4 class="description">Lorem Limpsum</h4>
-        </div>
-        <div>
-            <div class="imagen">IMAGE</div>
-            <h3 class="title">Lorem Limpsum</h3>
-            <h4 class="description">Lorem Limpsum</h4>
-        </div>
-        
+        <section class="section">
+            <article class="article">
+                <div class="imagen">IMAGE</div>
+                <h3 class="title">Lorem Limpsum</h3>
+                <h4 class="description">Lorem Limpsum</h4>
+            </article>
+            <article class="article">
+                <div class="imagen">IMAGE</div>
+                <h3 class="title">Lorem Limpsum</h3>
+                <h4 class="description">Lorem Limpsum</h4>
+            </article>
+            <article class="article">
+                <div class="imagen">IMAGE</div>
+                <h3 class="title">Lorem Limpsum</h3>
+                <h4 class="description">Lorem Limpsum</h4>
+            </article>
+        </section>
+        <section class="section">
+            <article class="article">
+                <div class="imagen">IMAGE</div>
+                <h3 class="title">Lorem Limpsum</h3>
+                <h4 class="description">Lorem Limpsum</h4>
+            </article>
+            <article class="article">
+                <div class="imagen">IMAGE</div>
+                <h3 class="title">Lorem Limpsum</h3>
+                <h4 class="description">Lorem Limpsum</h4>
+            </article>
+            <article class="article">
+                <div class="imagen">IMAGE</div>
+                <h3 class="title">Lorem Limpsum</h3>
+                <h4 class="description">Lorem Limpsum</h4>
+            </article>
+        </section>
     </div>
-    <div class="patrocinadores">
+    <section class="patrocinadores">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, fugit.
-    </div>
-    <div class="footer">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, neque?
-    </div>
-    
-</body>
-</html>
+    </section>
+<?php
+include("shared/footer.php");
+?>
