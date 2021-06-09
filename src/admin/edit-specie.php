@@ -16,50 +16,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-    <div class="row">
-        <div  class="col-md-1 " id="icon">
-        <i  class="fas fa-house-user"></i>
-        <i  class="fas fa-paw" id="active"></i>
-        <i  class="fas fa-adjust"></i>
-        <i  class="fas fa-basketball-ball"></i>
-        <i  class="fas fa-bug"></i>
-        </div>
-        <div class="col-md-10 specie">
-            <div class="row">
-        <table class="table">
-            <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">ESPECIES</th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td><a href="edit-specie.php"><button  type="button" ><i class="fas fa-edit" ></i></button></a></td>
-                <td><i class="fas fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td><a href="edit-specie.php"><button  type="button" ><i class="fas fa-edit" ></i></button></a></td>
-                <td><i class="fas fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                <th scope="row">3</th>
-                <td >Larry the Bird</td>
-                <td><a href="edit-specie.php"><button  type="button" ><i class="fas fa-edit" ></i></button></a></td>
-                <td><i class="fas fa-trash-alt"></i></td>
-                </tr>
-            </tbody>
-            </table>
-            </div>
-            <div class="row mt-5">
-                <label  class="col-sm-12 col-form-label add mb-3 ">AGREGAR ESPECIES</label>
+    <div class="container mt-5">
+        <b><label  class="col-sm-12 col-form-label mb-3">AGREGAR ESPECIES</label></b>
             <div class="mb-3  row">
                 <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
                 <div class="col-sm-10">
@@ -96,12 +54,7 @@
                     <input class="form-control" type="file" id="formFile"  accept=".jpeg,.png,.jpg">
                 </div>
             </div>
-            <div class="mb-3 row col-sm-2">
-            <button type="submit" class="btn btn-dark mt-4" id="button">AGREGAR</button>
+            <button type="submit" class="btn dark mt-4" id="button-edit">EDITAR</button>
             </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
