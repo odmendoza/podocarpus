@@ -1,0 +1,28 @@
+#icon i {
+    padding: 20%;
+    font-size: 5rem;
+    background-color: #FCBC08;
+    border-radius: 50%;
+    color: #fff;
+    margin: 10%;
+}
+.specie{
+    padding-top: 5%;
+    margin-left: 8%;
+}
+thead{
+    background-color: #1E2B38;
+    color: #fff;
+}
+.add{
+    background-color: #1E2B38;
+    color: #fff;
+    margin-left: 12px;
+    padding: 0%;
+
+}
+        
+.add .row{
+    padding: 0%;
+}
+

@@ -1,74 +1,17 @@
-<?php
-include("config/config.php");
-include("shared/header.php");
-?>
-    <header class="carrusel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/mountains.jpeg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/mountains-2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/mountains-3.jpg" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </header>
-    <div class="container">
-        <section class="section">
-            <article class="article">
-                <div class="imagen">IMAGE</div>
-                <h3 class="title">Lorem Limpsum</h3>
-                <h4 class="description">Lorem Limpsum</h4>
-            </article>
-            <article class="article">
-                <div class="imagen">IMAGE</div>
-                <h3 class="title">Lorem Limpsum</h3>
-                <h4 class="description">Lorem Limpsum</h4>
-            </article>
-            <article class="article">
-                <div class="imagen">IMAGE</div>
-                <h3 class="title">Lorem Limpsum</h3>
-                <h4 class="description">Lorem Limpsum</h4>
-            </article>
-        </section>
-        <section class="section">
-            <article class="article">
-                <div class="imagen">IMAGE</div>
-                <h3 class="title">Lorem Limpsum</h3>
-                <h4 class="description">Lorem Limpsum</h4>
-            </article>
-            <article class="article">
-                <div class="imagen">IMAGE</div>
-                <h3 class="title">Lorem Limpsum</h3>
-                <h4 class="description">Lorem Limpsum</h4>
-            </article>
-            <article class="article">
-                <div class="imagen">IMAGE</div>
-                <h3 class="title">Lorem Limpsum</h3>
-                <h4 class="description">Lorem Limpsum</h4>
-            </article>
-        </section>
-    </div>
-    <section class="patrocinadores">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, fugit.
-    </section>
-<?php
-include("shared/footer.php");
-?>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Podocarpus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <script src="https://kit.fontawesome.com/bc9c77379f.js" crossorigin="anonymous"></script>
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2? family = Comfortaa: wght @ 500 & display = swap" rel = "hoja de estilo"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/admin.login.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>

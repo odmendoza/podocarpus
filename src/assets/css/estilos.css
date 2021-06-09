@@ -1,66 +1,13 @@
-*{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+.dark {
+    padding-left: 2%;
+    background-color: #1E2B38 !important;
+    color: #fff;
 }
-div{
-    background: #C2C2C2;
-    padding: 1rem;
-    margin-bottom: 40px;
+.navbar-brand{
+    padding-left: 2%;
+    
 }
-.container{
-    margin: 50px 150px 50px 150px;
-    padding: 0px;
-    background-color: transparent;
-
-    display: grid;
-    grid-gap: 20px;
-    /*grid-template-columns: 33% 33% 33%;*/
-    grid-template-columns:  repeat(3, 1fr);
-    grid-template-rows:  repeat(4, auto);
-
-    grid-template-areas: "carrusel carrusel carrusel"
-					      "article article article"
-					      "article article article"
-					      "footer footer footer"
-
-}
-.container div{
-    margin: 0px 20px 28px 20px;
-    background-color: transparent;
-
-}
-div .imagen{
-    padding: 4rem;
-    margin: 0px 0px 20px 0px;
-    background-color: #707070;
-    border-radius: 20px;
-    text-align: center
-}
-div .title{
-    text-align: center;
-    margin: 10px 0px;
-
-
-}
-div .description{
-    text-align: center;
-}
- .carrusel{
-    padding: 10rem;
-    text-align: center;
-}
-.patrocinadores{
-    padding: 2rem;
-    text-align: center;
-}
-.footer{
-    padding: 2rem;
-    text-align: left;
-    background-color:#184E77;
-    color: white;
-    margin-bottom: 0px;
-}
-img{
-    width: 20px;
-    height: 20px;
-}
+#flex-end {
+    justify-content: flex-end;
+    padding-right: 2% ;
+  }
