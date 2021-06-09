@@ -24,8 +24,9 @@
         <i  class="fas fa-adjust"></i>
         <i  class="fas fa-basketball-ball"></i>
         <i  class="fas fa-bug"></i>
-    </div>
+        </div>
         <div class="col-md-10 specie">
+            <div class="row">
         <table class="table">
             <thead>
                 <tr>
@@ -56,46 +57,48 @@
                 </tr>
             </tbody>
             </table>
-            <div class="mb-3 add row">
-    <label  class="col-sm-12 col-form-label ">AGREGAR ESPECIES</label>
-  </div>
-  <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Nombre Cientifico</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Edad</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Habitat</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Descripcion</label>
-    <div class="col-sm-10">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-  </div>
-  <div class="mb-3">
-  <input class="form-control" type="file" id="formFile">
-</div>
+            </div>
+            <div class="row mt-5">
+                <label  class="col-sm-12 col-form-label add mb-3 ">AGREGAR ESPECIES</label>
+            <div class="mb-3  row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Nombre Cientifico</label>
+                <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Edad</label>
+                <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Habitat</label>
+                <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Descripcion</label>
+                <div class="col-sm-10">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">Imagen</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="file" id="formFile"  accept=".jpeg,.png,.jpg">
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
     </div>
-    </div>
-    
-
 </body>
 </html>

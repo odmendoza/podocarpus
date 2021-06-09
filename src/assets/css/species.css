@@ -4,10 +4,13 @@
     background-color: #FCBC08;
     border-radius: 50%;
     color: #fff;
-    margin: 10%;
+    margin:  0 10% 10% 10%;
+}
+#icon{
+    padding-top: 2%;
 }
 .specie{
-    padding-top: 5%;
+    padding-top: 2%;
     margin-left: 8%;
 }
 thead{
@@ -17,12 +20,5 @@ thead{
 .add{
     background-color: #1E2B38;
     color: #fff;
-    margin-left: 12px;
-    padding: 0%;
-
-}
-        
-.add .row{
-    padding: 0%;
 }
 
