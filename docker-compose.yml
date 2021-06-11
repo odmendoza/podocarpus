@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.6
+    container_name: docker-mysql
+    environment:
+      MYSQL_DATABASE: podocarpus_db
+      MYSQL_USER: podocarpus_user
+      MYSQL_PASSWORD: podocarpus_pwd
+      MYSQL_ROOT_PASSWORD: root_pwd
+    ports:
+      - "3306:3306"
+    restart: always
+
+  web:
+    image: php:7.4-apache
+    container_name: docker-php
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+    links:
+      - mysql
