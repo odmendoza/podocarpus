@@ -5,5 +5,5 @@
 //datos de la base de datos
 define('DBHOST', 'localhost');
 define('DBUSER', 'root');
-define('DBPASS', '!5zp8eguJ');
-define('DBNAME', 'podocarpus_db');
+define('DBPASS', '');
+define('DBNAME', 'podocarpus');

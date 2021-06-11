@@ -66,43 +66,58 @@ class clase_mysqli7{
 
 	/*funcion para mostrar la consulta en forma de tabla*/
 	function verconsulta(){
-		echo "<table border=1>";
+		echo "<table class='table'>";
+		echo "<thead>";
 		echo "<tr>";
-		for ($i=0; $i < $this->numcampos() ; $i++) { 
+		for ($i=0; $i < $this->numcampos() ; $i++) {
 			//echo "<td>".$this->nombrecampo($i)."</td>";
-			echo  "<td>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</td>";
+			echo  "<td scope='col'>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</td>";
 		}
 		echo "</tr>";
+        echo "</thead>";
+        echo "<tbody>";
 		while ($row=mysqli_fetch_array($this->Consulta_ID)) {
 			echo "<tr>";
 			for ($i=0; $i < $this->numcampos(); $i++) { 
-				echo "<td>".$row[$i]."</td>";
+				echo "<td scope='row'>".$row[$i]."</td>";
 			}
 			echo "</tr>";
 		}
+        echo "</tbody>";
 		echo "</table>";
 	}
+
+
 	/*funcion para mostrar la consulta en forma de tabla*/
 	function verconsultacrud(){
-		echo "<table border=1>";
-		echo "<tr>";
-		for ($i=0; $i < $this->numcampos() ; $i++) { 
-			//echo "<td>".$this->nombrecampo($i)."</td>";
-			echo  "<td>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</td>";
-		}
-		echo  "<td>Actualizar</td>";
-		echo  "<td>Borrar</td>";
-		echo "</tr>";
-		while ($row=mysqli_fetch_array($this->Consulta_ID)) {
-			echo "<tr>";
-			for ($i=0; $i < $this->numcampos(); $i++) { 
-				echo "<td>".utf8_encode($row[$i])."</td>";
-			}
-			echo  "<td><a href='update.php?var=$row[0]'>Actualizar</a></td>";
-			echo  "<td>Borrar</td>";
-			echo "</tr>";
-		}
-		echo "</table>";
+        echo "<table class='table'>";
+        echo "<thead>";
+        echo "<tr>";
+        for ($i=0; $i < $this->numcampos() ; $i++) {
+            //echo "<td>".$this->nombrecampo($i)."</td>";
+            echo  "<td scope='col'>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</td>";
+        }
+        echo "</tr>";
+        echo "</thead>";
+        echo "<tbody>";
+        while ($row=mysqli_fetch_array($this->Consulta_ID)) {
+            echo "<tr>";
+            for ($i=0; $i < $this->numcampos() - 1; $i++) {
+                echo "<td scope='row'>".$row[$i]."</td>";
+            }
+            echo "<td scope='row'> <img src='".$row[6]."' class='img-fluid'</td>";
+            //Edite
+            echo '<td><a href="edit-specie.php?id='.$row[0].'">';
+            echo '<button type="button"><i class="fas fa-edit"></i></button>';
+            echo '</a></td>';
+            // Delete
+            echo '<td><a href="actions/delete.php?id='.$row[0].'">';
+            echo '<button type="button"><i class="fas fa-trash-alt"></i></button>';
+            echo '</a></td>';
+            echo "</tr>";
+        }
+        echo "</tbody>";
+        echo "</table>";
 	}
 
 	/*Retorna una lista de la consulta*/
