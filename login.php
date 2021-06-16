@@ -7,7 +7,7 @@
 
     <title>Parque Podocarpus | Admin</title>
 
-    <link rel="stylesheet" href="../assets/css/admin.login.css">
+    <link rel="stylesheet" href="assets/css/admin.login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
@@ -18,7 +18,7 @@
     </header>
     <main class="main">
         <section class="section">
-            <form action=""> 
+            <form action="dll/validate.php" method="post">
                 <label for="email">Correo Electrónico</label>
                 <input type="email" class="email" id="email" name="email" required>
                 <label for="password">Contraseña</label>
