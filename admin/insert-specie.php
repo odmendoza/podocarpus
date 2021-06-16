@@ -1,6 +1,10 @@
 <?php
+// Add this to protect an admin view
+include($_SERVER['DOCUMENT_ROOT'] . '/podocarpus/dll/security.php');
+?>
 
-//include($_SERVER['DOCUMENT_ROOT'].'/podocarpus/core/connection.php');
+<?php
+// $miconexion comes from security.php
 $miconexion = new clase_mysqli7;
 $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
 

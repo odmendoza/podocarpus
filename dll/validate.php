@@ -5,13 +5,11 @@ if($_POST['email'] && $_POST['password']){
     $email = $_POST['email'];
     $password = md5($_POST['password']);
 
-    include('../config/config.php');
-    include('class_mysqli_7.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/podocarpus/dll/connection.php');
 
-    $conexion = new clase_mysqli7;
-    $conexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
-    $conexion->consulta("SELECT * from users where email = '$email' and password = '$password'");
-    $userList = $conexion->consulta_lista();
+    // $miconexion comes from connection.php
+    $miconexion->consulta("SELECT * from users where email = '$email' and password = '$password'");
+    $userList = $miconexion->consulta_lista();
     if(@$userList[0]){
         $_SESSION['authenticated'] = true;
         $_SESSION['id'] = $userList[0];

@@ -29,5 +29,6 @@
             <a href=""><i class="fas fa-adjust"></i></a>
             <a href=""><i class="fas fa-basketball-ball"></i></a>
             <a href=""><i class="fas fa-bug"></i></a>
+            <a href="actions/logout.php"><i class="fas fa-sign-out-alt"></i></a>
         </div>
         <div class="col-md-10 specie">

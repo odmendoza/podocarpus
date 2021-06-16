@@ -1,10 +1,9 @@
 <?php
+// Add this to protect an admin view
+include($_SERVER['DOCUMENT_ROOT'] . '/podocarpus/dll/security.php');
+?>
 
-include($_SERVER['DOCUMENT_ROOT'] . '/podocarpus/config/config.php');
-include($_SERVER['DOCUMENT_ROOT'] . '/podocarpus/dll/class_mysqli_7.php');
-
-$miconexion = new clase_mysqli7;
-$miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
+<?php
 
 $id = $_GET["id"];
 

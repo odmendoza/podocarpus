@@ -1,10 +1,7 @@
 <?php
+// Add this to protect an admin view
+include($_SERVER['DOCUMENT_ROOT'] . '/podocarpus/dll/security.php');
 
-include($_SERVER['DOCUMENT_ROOT'] . '/podocarpus/config/config.php');
-include($_SERVER['DOCUMENT_ROOT'] . '/podocarpus/dll/class_mysqli_7.php');
-
-$miconexion = new clase_mysqli7;
-$miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
 ?>
 
 <?php
@@ -12,6 +9,7 @@ include('shared/header.php');
 ?>
             <div class="row">
                 <?php
+                //$miconexion comes from security.php
                 $miconexion->consulta("SELECT * FROM species");
                 $miconexion->verconsultacrud();
                 ?>
