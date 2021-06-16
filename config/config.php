@@ -6,4 +6,4 @@
 define('DBHOST', 'localhost');
 define('DBUSER', 'root');
 define('DBPASS', '');
-define('DBNAME', 'podocarpus');
+define('DBNAME', 'podocarpus_db');
